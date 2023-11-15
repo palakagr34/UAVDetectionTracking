@@ -6,7 +6,6 @@ from torchvision.transforms import functional as F
 from PIL import Image
 from pathlib import Path
 
-# Pre-trained Faster R-CNN model
 model = fasterrcnn_resnet50_fpn(pretrained=True)
 model.eval()
 
@@ -58,7 +57,7 @@ def process_video(video_path, output_folder):
             frame_count += 1
 
         progress = (frameNum / total_frames) * 100
-        print(f"Progress: {progress:.2f}%")
+        print(f"Progress: {progress:.2f}%")         # Print progress through video in percentage 
 
 
 
