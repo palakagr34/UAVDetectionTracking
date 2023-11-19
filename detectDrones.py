@@ -23,6 +23,8 @@ def detect_drones(frame):
     boxes = predictions[0]['boxes']
     labels = predictions[0]['labels']
     scores = predictions[0]['scores']
+    
+    print("Boxes: ", boxes)
 
     # Filter based on 50% confidence
     threshold = 0.5
